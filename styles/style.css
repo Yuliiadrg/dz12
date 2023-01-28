@@ -1,0 +1,110 @@
+:root {
+    --main-font-family: 'PT Sans400', sans-serif;
+    --accent-main-font-family: 'PT Sans700', sans-serif;
+
+    --accent-nav-font-family: 'TourneySemiBold', cursive;
+    --nav-font-family: 'Staatliches400', cursive;
+
+    --title-font-family: 'Francois One400', sans-serif;
+    --title-sup-font-family: 'Farro300', sans-serif;
+
+    --main-bg-color: #fff;
+    --accent-bg-color: #DADADA;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-style: normal;
+    font-family: var(--main-font-family);
+    color: #000000;
+}
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*header*/
+header {
+    padding: 13px 0px;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav_list_link--lang {
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--accent-nav-font-family);
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+.nav_list_link {
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--nav-font-family);
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+.logo-icon {
+    fill: #1A1A1A;
+}
+/*main*/
+main {
+    padding: 35px 0 50px 0;
+}
+section {
+    padding: 35px 0;
+}
+.container-title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.title {
+    font-family: var(--title-font-family);
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.title--sup {
+    font-family: var(--title-sup-font-family);
+    font-size: 26px;
+    line-height: 10px;
+    letter-spacing: 0.04em;
+    margin-bottom: 30px;
+}
+.text--underlined {
+    text-decoration: underline;
+}
+.text--italic {
+    font-style: italic;
+}
+.text--bold {
+    font-weight: bold;
+}
+.text--bg {
+    background-color: var(--accent-bg-color);
+}
+.section-text {
+    font-size: 28px;
+    line-height: 48px;
+}
+.container .section-text:not(:last-child) {
+    margin-bottom: 40px;
+}
